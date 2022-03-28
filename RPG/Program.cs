@@ -30,7 +30,7 @@ while (true)
             cas = cas + 10;
             unava = unava + 10;
             Staty[Staty.ElementAt(quest).Key] = Staty.ElementAt(quest).Value + 10;
-            Console.WriteLine($"{jmenoPostavy} se z výpravy vrítil celý");
+            Console.WriteLine($"{jmenoPostavy} se z výpravy vrátil celý");
             Console.WriteLine("------------");
             Console.WriteLine($"{jmenoPostavy} má lvl. {lvl} a vlastnosti:");
             foreach (var radekStatu in Staty)
@@ -52,7 +52,7 @@ while (true)
         Thread.Sleep(unava * 1000);
         unava = 0;
         Console.WriteLine($"{jmenoPostavy} už je vzhůru");
-        Console.WriteLine("Peo pokračování stiskni tlačítko na klávesnci");
+        Console.WriteLine("Pro pokračování stiskni tlačítko na klávesnci");
         Console.ReadKey();
     }
 }
